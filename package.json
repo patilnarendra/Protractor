@@ -1,0 +1,20 @@
+{
+  "name": "my-protractor-page-objects",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "jasmine-data-provider": "^2.2.0",
+    "protractor": "^5.4.1",
+    "protractor-jasmine2-html-reporter": "^0.0.7",
+    "webdriver-manager": "^12.1.1"
+  },
+  "scripts": {
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update  --ignore_ssl ",
+    "webdriver-start": "./node_modules/.bin/webdriver-manager start",
+    "protractor": "./node_modules/.bin/protractor conf.js",
+    "start": "npm run webdriver-start && npm run webdriver-update && npm run protractor"
+  },
+  "keywords": [],
+  "author": "Narendra",
+  "license": "ISC"
+}
